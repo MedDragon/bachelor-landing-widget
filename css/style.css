@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    color: #333;
+    color: #333; /* Текстовий колір */
     line-height: 1.6;
     padding: 20px;
 }
@@ -18,6 +18,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     margin-bottom: 0.5rem;
+    color: #0044cc; /* Колір для заголовків */
 }
 
 /* Стилі для лінків */
@@ -76,6 +77,8 @@ header, footer {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Картки контенту */
@@ -86,6 +89,28 @@ img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+
+/* Стилі для зображень у контейнерах */
+.image-wrapper {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 
 /* Мобільні адаптивні зображення */
 img {
@@ -114,4 +139,26 @@ img {
     margin: 10% auto;
     padding: 20px;
     border-radius: 8px;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.4rem; }
+
+html {
+    scroll-behavior: smooth;
 }
