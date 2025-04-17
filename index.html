@@ -4,23 +4,40 @@
     <meta charset="UTF-8">
     <title>Інтерактивний віджет для PDF в Zoho CRM</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Інтерактивний віджет для PDF в Zoho CRM">
+    <meta property="og:description" content="Віджет для автоматизації формування PDF-документів з угод у Zoho CRM">
+    <meta property="og:image" content="https://example.com/img/preview.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="uk_UA">
+
 </head>
 <body>
-<main class="container">
-    <section id="title">
-        <h1>Інтерактивний віджет для автоматизації формування PDF-документів в Zoho CRM</h1>
-        <h2>Interactive Widget for Automating PDF Document Generation in Zoho CRM</h2>
+<main class="container" role="main" itemscope itemtype="https://schema.org/EducationalOccupationalProgram">
+    <meta itemprop="educationalProgramMode" content="Full-time" />
+    <meta itemprop="timeToComplete" content="P4Y" /> <!-- P4Y — 4 роки навчання -->
+
+    <section id="title" aria-labelledby="main-title">
+        <h1 id="main-title" itemprop="name">Інтерактивний віджет для автоматизації формування PDF-документів в Zoho CRM</h1>
+        <h2 itemprop="alternateName">Interactive Widget for Automating PDF Document Generation in Zoho CRM</h2>
     </section>
 
-    <section id="summary">
-        <p>
+    <section id="summary" aria-labelledby="summary-title">
+        <h3 id="summary-title" class="visually-hidden">Опис роботи</h3>
+        <p itemprop="description">
             Віджет дозволяє обирати угоди користувача, створювати на основі їх даних PDF-документ
             та автоматично прикріплювати його до файлів клієнта в Zoho CRM.
         </p>
     </section>
 
-    <section id="keywords">
-        <h3>Ключові слова:</h3>
+    <section id="keywords" aria-labelledby="keywords-title">
+        <h3 id="keywords-title">Ключові слова:</h3>
         <ul>
             <li>Zoho CRM</li>
             <li>PDF генерація</li>
@@ -30,13 +47,13 @@
         </ul>
     </section>
 
-    <section id="goal">
-        <h3>Мета дослідження:</h3>
+    <section id="goal" aria-labelledby="goal-title">
+        <h3 id="goal-title">Мета дослідження:</h3>
         <p>Спроєктувати та реалізувати інтерактивний вебвіджет, який автоматизує процес створення та завантаження PDF-документів в Zoho CRM.</p>
     </section>
 
-    <section id="tasks">
-        <h3>Основні завдання:</h3>
+    <section id="tasks" aria-labelledby="tasks-title">
+        <h3 id="tasks-title">Основні завдання:</h3>
         <ol>
             <li>Дослідити можливості інтеграції з Zoho CRM API.</li>
             <li>Розробити механізм вибору угод користувача.</li>
@@ -46,26 +63,35 @@
         </ol>
     </section>
 
-    <section id="results">
-        <h3>Очікувані результати:</h3>
+    <section id="results" aria-labelledby="results-title">
+        <h3 id="results-title">Очікувані результати:</h3>
         <p>Функціональний інтерактивний віджет, який дозволяє автоматизувати роботу менеджерів із документами в Zoho CRM.</p>
     </section>
 
-    <section id="contacts">
-        <h3>Контактна інформація:</h3>
-        <p>Карпенко Артем, студент групи Ін-12</p>
-        <p>Сумський державний університет</p>
-        <p>Email: artem.karpenko@student.sumdu.edu.ua</p>
+    <section id="contacts" aria-labelledby="contacts-title" itemscope itemprop="provider" itemtype="https://schema.org/Person">
+        <h3 id="contacts-title">Контактна інформація:</h3>
+        <p itemprop="name">Карпенко Артем, студент групи Ін-12</p>
+        <p itemprop="affiliation">Сумський державний університет</p>
+        <p>
+            <a href="mailto:artem.karpenko@student.sumdu.edu.ua"
+               aria-label="Надіслати лист на електронну адресу Артема Карпенка"
+               itemprop="email">
+                Email: artem.karpenko@student.sumdu.edu.ua
+            </a>
+        </p>
     </section>
 
-    <section id="media">
+    <section id="media" aria-labelledby="media-title">
+        <h3 id="media-title" class="visually-hidden">Ілюстрації</h3>
         <div class="image-wrapper">
-            <img src="img/СумДУ.png" alt="Логотип університету">
+            <img src="img/СумДУ.png" alt="Логотип Сумського державного університету" itemprop="image" />
         </div>
         <div class="image-wrapper">
-            <img src="img/pet-shop.jpg" alt="Скріншот віджету Zoho CRM">
+            <img src="img/pet-shop.jpg" alt="Скріншот віджету для Zoho CRM" itemprop="image" />
         </div>
     </section>
+
 </main>
+
 </body>
 </html>
